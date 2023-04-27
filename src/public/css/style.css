@@ -1,0 +1,25 @@
+.header {
+  flex-direction: row;
+  max-width: 1400px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.header__logo {
+  width: auto;
+  height: 60px;
+  padding-left: 20px;
+}
+.header__link {
+  display: flex;
+  gap: 57px;
+  padding-right: 20px;
+}
+.header a {
+  text-decoration: none;
+  color: #FF6060;
+}
+
+/*# sourceMappingURL=style.css.map */

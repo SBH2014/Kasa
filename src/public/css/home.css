@@ -1,0 +1,20 @@
+.banner {
+  margin-top: 30px;
+  height: 223px;
+  border-radius: 25px;
+}
+.banner__home {
+  background: url("/src/assets/backgroundHome.png");
+  background-position: center;
+  background-size: cover;
+}
+.banner h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: "Montserrat";
+}
+
+/*# sourceMappingURL=home.css.map */
