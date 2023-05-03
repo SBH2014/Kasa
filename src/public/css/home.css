@@ -2,19 +2,63 @@
   margin-top: 30px;
   height: 223px;
   border-radius: 25px;
+  margin-bottom: 30px;
 }
-.banner__home {
-  background: url("/src/assets/backgroundHome.png");
-  background-position: center;
-  background-size: cover;
-}
-.banner h1 {
+
+.banner__home h1 {
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   font-family: "Montserrat";
+}
+.banner__home-pic {
+  background: url("/src/assets/backgroundHome.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.logements {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  row-gap: 20px;
+  column-gap: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F7F7;
+  border-radius: 25px;
+}
+.logements a {
+  text-decoration: none;
+  height: 250px;
+}
+.logements__fiche {
+  background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #a74545);
+  border-radius: 10px;
+  width: 20%;
+  padding-bottom: 10px;
+}
+.logements__fiche img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  height: 200px;
+  object-fit: cover;
+}
+.logements__fiche h3 {
+  display: flex;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 142.6%;
+  margin: 0px 20px;
+  align-items: flex-start;
+  overflow: hidden;
+  color: white;
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -1,38 +1,19 @@
-//import React,{useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import DefaultPicture from '../assets/card.jpg'
-import "../public/css/style.css"
-import Banner from '../components/Banner';
 
+import "../public/css/style.css";
+import "../public/css/home.css"
+import Banner from '../components/Banner';
 import Card from '../components/Card';
+import Footer from '../components/Footer';
 function Home() {
-    const logementCard = [
-        {
-            name: 'Jane Doe',
-            picture: DefaultPicture,
-        },
-        {
-            name: 'John Doe',
-            picture: DefaultPicture,
-        },
-        {
-            name: 'Jeanne Biche',
-            picture: DefaultPicture,
-        },
-    ]
-       
+ 
     return <div>
-        <Banner/>
-        
-        {logementCard.map((profile,index)=>(
-               <Card
-               key={`${profile.name}-${index}`}
-               picture={profile.picture}
-               title ={profile.name}
-               />
-        )
-        )}
-      
+     <Banner>
+     <div className='banner , banner__home-pic , banner__home h1' >
+       <h1 >Chez vous, partout et ailleurs</h1>
+      </div>
+     </Banner>
+        <Card />
+        <Footer/>
     </div>;
 }
 export default Home

@@ -1,11 +1,23 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import Banner from '../components/Banner';
+import Collapse from '../components/Collapse';
+import Footer from '../components/Footer';
+import "../public/css/style.css";
+import "../public/css/apropos.css"
+
 function Apropos() {
-    const { questionNumber } = useParams()
     return <div>
-        
-        <h1>A propos</h1>
-        <h2>Question {questionNumber}</h2>
+<Banner>
+    <div className='banner , banner__aPropos-pic'>
+    </div>
+</Banner>
+<Collapse/>
+<Footer/>
+
+
+<div>
+
+</div>
     </div>;
 }
 export default Apropos

@@ -1,0 +1,52 @@
+.collapse{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    &__accordion{
+        width: 70%;
+    }
+    &__item{
+        margin-bottom: 5px;
+        padding: 10px 10px;
+        font-size:  24px;
+        &-title{
+            display: flex;
+         align-items: center;
+         justify-content: space-between;
+           background-color: $color-primary;
+         font-weight: 500;
+           color: white;
+           font-style: normal;
+           border-radius: 5px;
+           height: 40px;
+           padding: 0 5px 0 5px;
+           cursor: pointer;
+           margin: 0;
+
+        }
+        p {
+            padding: 20px 10px 20px 10px;
+            margin: 0;
+        }
+        &-content{
+            background-color: $color-secondary;
+            color: $color-primary;
+            font-weight: 400;
+            overflow: hidden;
+            transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+            max-height: 0;
+        }
+        &-contentShow{
+            max-height:max-content;
+            background-color: $color-secondary;
+            color: $color-primary;
+            font-weight: 400;
+     
+            transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+        }
+
+    }
+}

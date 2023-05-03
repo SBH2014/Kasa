@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"notFound.css"}
+{"version":3,"sourceRoot":"","sources":["../../styles/components/notFound/_error.scss","../../styles/utils/_variables.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;EACJ;;AACA;EACI;EACA,OCTY;;ADahB;EACI;;AAGA;EACI;EACA,OCnBQ;EDoBP","file":"notFound.css"}

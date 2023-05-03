@@ -9,6 +9,9 @@
     justify-content: space-between;
     align-items:center;
     margin-top: 20px;
+    a{
+        color: $color-primary;
+    }
  
     &__logo {
         width: auto;
@@ -21,10 +24,12 @@
         gap: 57px;
         padding-right  : 20px;
       } 
-      a {
+     &__a-active{
+        text-decoration: underline;
+     }
+     &__a-nonactive{
         text-decoration: none;
-        color: $color-primary;
-    }
-   
-
+     }
 }
+
+

@@ -1,0 +1,21 @@
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 500px;
+h1{
+    font-size: 36px;
+    color: $color-primary;
+}
+p{
+    padding-top: 50px;
+}
+    a{
+        text-decoration: underline;
+        color: $color-primary;
+         font-size: 18px; 
+    }
+
+}

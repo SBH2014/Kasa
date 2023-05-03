@@ -1,0 +1,18 @@
+.banner__home{
+    h1 {
+        color: $color-white;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         height: 100%;
+         font-family: 'Montserrat';
+     
+     }
+     &-pic{
+        background: url("/src/assets/backgroundHome.png");
+        background-position : center;
+        background-size: cover;
+     }
+        
+ 
+}

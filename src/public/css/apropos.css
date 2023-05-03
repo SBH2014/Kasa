@@ -1,3 +1,64 @@
+.banner {
+  margin-top: 30px;
+  height: 223px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
 
+.banner__aPropos-pic {
+  background: url("/src/assets/backgroung_aPropos.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.collapse {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-family: "Montserrat";
+}
+.collapse__accordion {
+  width: 70%;
+}
+.collapse__item {
+  margin-bottom: 5px;
+  padding: 10px 10px;
+  font-size: 24px;
+}
+.collapse__item-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FF6060;
+  font-weight: 500;
+  color: white;
+  font-style: normal;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 5px 0 5px;
+  cursor: pointer;
+  margin: 0;
+}
+.collapse__item p {
+  padding: 20px 10px 20px 10px;
+  margin: 0;
+}
+.collapse__item-content {
+  background-color: #F7F7F7;
+  color: #FF6060;
+  font-weight: 400;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+  max-height: 0;
+}
+.collapse__item-contentShow {
+  max-height: max-content;
+  background-color: #F7F7F7;
+  color: #FF6060;
+  font-weight: 400;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
 
 /*# sourceMappingURL=apropos.css.map */
