@@ -1,14 +1,119 @@
-.sliderStyles {
-  height: 100%;
+.carrousel {
   position: relative;
+  height: 415px;
+  width: 100%;
+  margin-top: 30px;
+}
+.carrousel img {
+  object-fit: cover;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  border-radius: 25px;
+}
+.carrousel p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-top: 340px;
+  text-align: center;
+  text-shadow: 0px 0px 5px black;
+}
+.carrousel__button {
+  border: none;
+  background-color: transparent;
+  display: hidden;
+  color: white;
+}
+.carrousel__vectorRight {
+  position: absolute;
+  content: "";
+  inset: 0;
+  top: 45%;
+  cursor: pointer;
+  left: calc(100% - 50px);
+}
+.carrousel__vetorLeft {
+  position: absolute;
+  content: "";
+  color: white;
+  inset: 0;
+  top: 45%;
+  cursor: pointer;
+  left: 0;
+}
+.carrousel__counter-pic {
+  position: absolute;
+  content: "";
+  inset: 0;
+  top: 75%;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  color: white;
 }
 
-.slideStyle {
+.content {
   width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.content h1 {
+  color: #FF6060;
+  font-size: 36px;
+  margin-bottom: 0;
+}
+.content__title {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-left: 20px;
+}
+.content__title-p {
+  color: #FF6060;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.content__tags {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+}
+.content__tags-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 115px;
+  font-size: 14px;
+  background-color: #FF6060;
+  color: white;
   border-radius: 10px;
-  background-position: center;
-  background-size: cover;
+}
+.content__blocHost {
+  display: flex;
+  flex-direction: column;
+}
+.content__blocHost-host {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: #FF6060;
+  margin-top: 20px;
+}
+.content__blocHost-host img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.content__blocHost-stars {
+  display: flex;
+  font-size: 30px;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=logement.css.map */

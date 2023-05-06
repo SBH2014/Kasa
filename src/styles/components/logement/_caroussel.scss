@@ -1,12 +1,136 @@
-.sliderStyles{
-    height: 100%;
+.carrousel{
     position: relative;
-}
-.slideStyle{
+    height: 415px;
     width: 100%;
-    height: 100%;
-    border-radius: 10px ;
-    background-position: center ;
- background-size: cover;
+    margin-top: 30px;
+    img{
+        object-fit: cover;
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        border-radius: 25px;
+    }
+    p{
+        position: relative;
+        font-size: 18px;
+        font-weight: 500;
+        color:white;
+        margin-top: 340px;
+        text-align: center;
+        text-shadow: 0px 0px 5px black;
+    }
+   &__button{
+        border: none;
+        background-color: transparent;
+        display: hidden;
+        color:white;
+    }
+    &__vectorRight{
+       
+     
+            position: absolute;
+            content: "";
+            inset: 0;
+            top: 45%;
+            cursor: pointer;
+            left: calc(100% - 50px);
+      
+    }
+    &__vetorLeft{
+     
+            position: absolute;
+            content: "";
+            color: white;
+            inset: 0;
+            top:  45%;
+            cursor: pointer;
+            left: 0;
+      
+        
+    }
+    &__counter-pic{
+        position: absolute;
+        content: "";
+        inset: 0;
+        top: 75%;
+     font-weight: 500;
+      font-size: 18px;
+       text-align: center;
+       color: white;
+    }
+}
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+    h1{
+        color: $color-primary;
+        font-size: 36px;
+        margin-bottom: 0;
+    }
+  &__title{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      padding-left: 20px; 
+      &-p{
+        color: $color-primary;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 10px;
+   
+      }
+     }  
+   
+    &__tags{
+
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+
+        &-list{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 25px;
+            width: 115px;
+            font-size: 14px;
+            background-color: $color-primary;
+            color: white;
+            border-radius: 10px;
+        }
+       
+
+     }
+     &__blocHost{
+        display: flex;
+        flex-direction: column;
+        &-host{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            color: $color-primary;
+            margin-top: 20px;
+            img{
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+            }
+    
+         }
+         &-stars{
+            display: flex;
+            font-size: 30px;
+          
+            gap: 10px;
+           
+         }
+     }
+
+     
+
 
 }
