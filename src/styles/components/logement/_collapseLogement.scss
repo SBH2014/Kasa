@@ -1,0 +1,31 @@
+.collapse__logement{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  
+    p{
+
+        font-size: 18px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    &-li{
+        list-style-type: none;
+        padding-bottom: 5px;
+   
+    }
+   
+    @media (max-width:$mobile_mini){
+        flex-direction: column;
+        h3{
+            font-size: 13px;
+        }
+        p{
+
+            font-size: 12px;
+        }
+        }
+
+}

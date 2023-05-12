@@ -12,9 +12,17 @@
     a{
         color: $color-primary;
     }
+    
+    @media (max-width:$mobile_mini) {
+
+    a{
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    }
  
     &__logo {
-        width: auto;
+
         height: 60px;
         padding-left: 20px;
 
@@ -30,6 +38,17 @@
      &__a-nonactive{
         text-decoration: none;
      }
+
+     @media (max-width:$mobile_mini) {
+
+      &__link {
+        gap: 20px;
+        padding-right  : 10px;
+      } 
+      &__logo {
+        width: 60%;
+      }
+    }
 }
 
 

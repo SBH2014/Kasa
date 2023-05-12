@@ -1,3 +1,4 @@
+/*media queries*/
 .banner {
   margin-top: 30px;
   height: 223px;
@@ -7,7 +8,6 @@
 
 .banner__aPropos-pic {
   background: url("/src/assets/backgroung_aPropos.png");
-  background-position: center;
   background-size: cover;
 }
 
@@ -17,15 +17,21 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  font-family: "Montserrat";
+}
+.collapse h3 {
+  font-weight: normal;
 }
 .collapse__accordion {
-  width: 70%;
+  width: 80%;
 }
 .collapse__item {
   margin-bottom: 5px;
   padding: 10px 10px;
-  font-size: 24px;
+}
+@media (max-width: 505px) {
+  .collapse__item {
+    padding: 0;
+  }
 }
 .collapse__item-title {
   display: flex;
@@ -40,10 +46,12 @@
   padding: 0 5px 0 5px;
   cursor: pointer;
   margin: 0;
+  font-size: 24px;
 }
 .collapse__item p {
   padding: 20px 10px 20px 10px;
   margin: 0;
+  font-size: 24px;
 }
 .collapse__item-content {
   background-color: #F7F7F7;
@@ -59,6 +67,22 @@
   color: #FF6060;
   font-weight: 400;
   transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+@media (max-width: 910px) {
+  .collapse__accordion {
+    width: 90%;
+  }
+}
+@media (max-width: 505px) {
+  .collapse__accordion {
+    width: 100%;
+  }
+  .collapse__item-title {
+    font-size: 13px;
+  }
+  .collapse__item p {
+    font-size: 12px;
+  }
 }
 
 /*# sourceMappingURL=apropos.css.map */

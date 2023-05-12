@@ -6,13 +6,22 @@
          justify-content: center;
          height: 100%;
          font-family: 'Montserrat';
+         font-weight: normal;
      
      }
      &-pic{
         background: url("/src/assets/backgroundHome.png");
         background-position : center;
         background-size: cover;
+ 
+      
      }
         
- 
+     @media (max-width:505px) {
+       h1{
+        padding-left: 10px;
+        width: 86%
+       }
+     }
+    
 }

@@ -4,9 +4,9 @@
    flex-wrap: wrap;
    width: 100%;
    row-gap: 20px;
-   column-gap: 40px;
-   padding-top: 30px;
-   padding-bottom: 30px;
+   column-gap: 50px;
+   padding-top: 40px;
+   padding-bottom: 40px;
    align-items: center;
    justify-content: center;
    background-color:$color-secondary;
@@ -19,27 +19,85 @@
     &__fiche{
         background-image: linear-gradient(180deg, $color-primary, #FF6060, #FF6060, #a74545);;
         border-radius: 10px;
-         width:20%;
-        padding-bottom: 10px;
+         width:28%;
+        padding-bottom: 5px;
+
 
         img{
             width: 100%;
             border-radius: 10px 10px 0px 0px;
-            height: 200px;
+            height: 180px;
             object-fit: cover;
         }
         h3{
             display: flex;
-            height: 50px;
+            height: 64px;
+            align-items: center;
             font-size: 18px;
             font-weight: 500;
-            line-height: 142.6%;
-            margin: 0px 20px;
-            align-items: flex-start;
-            overflow: hidden; 
+            margin: 0px 5px;
+           overflow: hidden; 
             color: white;
       
         }
     }
+    @media  (max-width:$desktop) {
+        column-gap : 30px;
+        &__fiche{
+
+       
+            img{
+                height: 180px;
+            }
+
+        }
+        
+    };
+
+
+    @media (max-width:$tablette) {
+      column-gap : 25px;
+        a{
+            height: 180px;
+        }
+        &__fiche{
+            width: 43%;
+            img{
+                height: 120px;
+            }
+            h3{
+height: 55px;
+            }
+        }
+    };
+    @media (max-width:$mobile) {
+  
+       &__fiche{
+        width: 45%;
+        img{
+            height: 120px;
+        }
+        h3{
+            font-size: 16px;
+        }
+     
+    }
+}
+    @media (max-width:$mobile_mini) {
+        background-color:white;
+        &__fiche{
+         width: 100%;
+         img{
+            height: 130px;
+        }
+        h3{
+            height: 45px;
+        }
+      
+     }
+    }
+       
+      
+ 
     
 }

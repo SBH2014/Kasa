@@ -1,20 +1,38 @@
 import React from 'react';
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
-import Footer from '../components/Footer';
 import "../public/css/style.css";
 import "../public/css/apropos.css"
 
 function Apropos() {
-    return <div>
-<Banner>
-    <div className='banner , banner__aPropos-pic'>
-    </div>
-</Banner>
-<Collapse/>
-<Footer/>
-
-
+    const data = [
+        {
+            title: "Fiabilité",
+            content: "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."
+        },
+        {
+            title:"Respect",
+              content :"La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+        },
+        {
+            title : "Service",
+            content : "Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."
+        },
+        {
+            title:"Sécurité",
+            content : "La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes"
+        }
+    ]
+    return <div className='content__rules' >
+  <Banner>
+          <div className='banner banner__aPropos-pic'></div>
+   </Banner>
+{data.map((item,i,index) =>{
+return (
+    <Collapse key={item.title + index } title={item.title}
+    content={item.content}
+    i={i}/>
+)})}
 <div>
 
 </div>

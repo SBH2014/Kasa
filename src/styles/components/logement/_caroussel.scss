@@ -3,6 +3,8 @@
     height: 415px;
     width: 100%;
     margin-top: 30px;
+
+
     img{
         object-fit: cover;
         position: absolute;
@@ -27,15 +29,17 @@
         display: hidden;
         color:white;
     }
+
     &__vectorRight{
        
      
             position: absolute;
             content: "";
             inset: 0;
-            top: 45%;
+            top: 310px;
             cursor: pointer;
-            left: calc(100% - 50px);
+            left: revert;
+            padding-right: 30px;
       
     }
     &__vetorLeft{
@@ -44,11 +48,9 @@
             content: "";
             color: white;
             inset: 0;
-            top:  45%;
+            top:  310px;
             cursor: pointer;
-            left: 0;
-      
-        
+            left: 30px;
     }
     &__counter-pic{
         position: absolute;
@@ -60,17 +62,39 @@
        text-align: center;
        color: white;
     }
+    @media (max-width:$mobile_mini){
+        &__vectorRight{
+            padding-right: 10px;
+            top: 280px;
+        }
+        &__vetorLeft{
+            left: 10px;
+            top: 280px;
+        }
+        &__counter-pic{
+            display: none;
+        }
+    }
 }
 .content{
   width: 100%;
   display: flex;
   flex-direction: row;
+  
 
     h1{
         color: $color-primary;
         font-size: 36px;
         margin-bottom: 0;
     }
+    @media (max-width:$mobile_mini){
+     h1{
+        font-size: 18px;
+
+     } 
+
+     }
+    
   &__title{
       display: flex;
       flex-direction: column;
@@ -83,13 +107,31 @@
         margin-bottom: 10px;
    
       }
+      @media (max-width:$mobile_mini){
+        width: 100%;
+        padding-left: 0;
+        &-p{
+            font-size: 14px;
+            line-height: 142.6%;
+        }
+
+     }
      }  
    
     &__tags{
 
         display: flex;
         flex-direction: row;
-        column-gap: 20px;
+        column-gap: 10px;
+        flex-wrap: wrap;
+        white-space: nowrap;
+
+        @media (max-width:$tablette){
+           column-gap: 5px;
+     
+        }
+    
+        
 
         &-list{
             display: flex;
@@ -101,6 +143,19 @@
             background-color: $color-primary;
             color: white;
             border-radius: 10px;
+            padding-inline: 14px;
+            white-space: nowrap;
+         
+            @media (max-width:$tablette){
+                width:  100px;
+                padding-inline: 20px;
+       
+             }
+             @media (max-width:$mobile_mini){
+                width: 84px;
+                font-size: 10px;
+                padding-inline: 20px;
+             }
         }
        
 
@@ -108,6 +163,19 @@
      &__blocHost{
         display: flex;
         flex-direction: column;
+        @media (max-width:$desktop){
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+        @media (max-width:$mobile_mini){
+            p {
+            font-size: 12px;
+            text-align: right;
+            width: 60px;
+            }
+        }
+    
         &-host{
             display: flex;
             flex-direction: row;
@@ -118,19 +186,43 @@
                 width: 64px;
                 height: 64px;
                 border-radius: 50%;
+                @media (max-width:$mobile_mini){
+                    width: 32px;
+                    height: 32px;
+
+                }
+            }
+            @media (max-width:$mobile_mini){
+                align-items: center;
+                padding-bottom: 20px;
+            
+                img {
+                    width: 32px;
+                    height: 32px;
+                }
+              
+                
             }
     
          }
          &-stars{
             display: flex;
             font-size: 30px;
-          
             gap: 10px;
+            img{
+                @media (max-width:$mobile_mini){
+                    width: 18px;
+                    height: 18px;
+                }
+            }
            
          }
      }
+   
 
+    @media (max-width:$desktop){
+             flex-direction: column;
+
+    }
      
-
-
 }

@@ -1,3 +1,4 @@
+/*media queries*/
 .banner {
   margin-top: 30px;
   height: 223px;
@@ -12,11 +13,18 @@
   justify-content: center;
   height: 100%;
   font-family: "Montserrat";
+  font-weight: normal;
 }
 .banner__home-pic {
   background: url("/src/assets/backgroundHome.png");
   background-position: center;
   background-size: cover;
+}
+@media (max-width: 505px) {
+  .banner__home h1 {
+    padding-left: 10px;
+    width: 86%;
+  }
 }
 
 .logements {
@@ -25,9 +33,9 @@
   flex-wrap: wrap;
   width: 100%;
   row-gap: 20px;
-  column-gap: 40px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  column-gap: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   align-items: center;
   justify-content: center;
   background-color: #F7F7F7;
@@ -40,25 +48,74 @@
 .logements__fiche {
   background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #a74545);
   border-radius: 10px;
-  width: 20%;
-  padding-bottom: 10px;
+  width: 28%;
+  padding-bottom: 5px;
 }
 .logements__fiche img {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
 }
 .logements__fiche h3 {
   display: flex;
-  height: 50px;
+  height: 64px;
+  align-items: center;
   font-size: 18px;
   font-weight: 500;
-  line-height: 142.6%;
-  margin: 0px 20px;
-  align-items: flex-start;
+  margin: 0px 5px;
   overflow: hidden;
   color: white;
+}
+@media (max-width: 1020px) {
+  .logements {
+    column-gap: 30px;
+  }
+  .logements__fiche img {
+    height: 180px;
+  }
+}
+@media (max-width: 910px) {
+  .logements {
+    column-gap: 25px;
+  }
+  .logements a {
+    height: 180px;
+  }
+  .logements__fiche {
+    width: 43%;
+  }
+  .logements__fiche img {
+    height: 120px;
+  }
+  .logements__fiche h3 {
+    height: 55px;
+  }
+}
+@media (max-width: 650px) {
+  .logements__fiche {
+    width: 45%;
+  }
+  .logements__fiche img {
+    height: 120px;
+  }
+  .logements__fiche h3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 505px) {
+  .logements {
+    background-color: white;
+  }
+  .logements__fiche {
+    width: 100%;
+  }
+  .logements__fiche img {
+    height: 130px;
+  }
+  .logements__fiche h3 {
+    height: 45px;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

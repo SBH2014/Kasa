@@ -4,14 +4,21 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-
-    &__accordion{
-        width: 70%;
+   h3{
+    font-weight: normal;
     }
+    &__accordion{
+        width: 80%;
+    }
+
     &__item{
         margin-bottom: 5px;
         padding: 10px 10px;
-        font-size:  24px;
+        @media (max-width:$mobile_mini){
+        padding: 0;
+            }
+     
+     
         &-title{
             display: flex;
          align-items: center;
@@ -25,11 +32,13 @@
            padding: 0 5px 0 5px;
            cursor: pointer;
            margin: 0;
+           font-size: 24px;
 
         }
         p {
             padding: 20px 10px 20px 10px;
             margin: 0;
+            font-size: 24px;
         }
         &-content{
             background-color: $color-secondary;
@@ -49,4 +58,24 @@
         }
 
     }
+    @media (max-width:$tablette) {
+        &__accordion{
+            width: 90%;
+        }
+     
+      }
+      @media (max-width:505px ) {
+        &__accordion{
+            width: 100%;
+        }
+        &__item{
+            &-title{
+                font-size: 13px;
+            } 
+            p {
+         
+                font-size: 12px;
+            }
+        }
+      }
 }
