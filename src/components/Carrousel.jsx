@@ -26,7 +26,7 @@ function Carousel ({slides}){
                     </button>
                 </div>
             )}
-            {/*compteur d'images qui ne s'affiche qu'en version Desktop et lorsqu'il y a plusieurs images*/}
+            {/*compteur d'images qui ne s'affiche qu'en version Desktop et quand il y a  plusieurs images*/}
             {totalPictures > 0 && (
 
                 <div> 

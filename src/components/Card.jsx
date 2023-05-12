@@ -16,6 +16,7 @@ function Card( ) {
         return <div>Loading ...</div>
     }
      return (
+   <div className='div_flex'>
          <div className='logements'>
         {LogementData.map((card)=>(
         <Link to={{ pathname: "/Logement", search: "?_id="+ card.id }} className='logements__fiche' key={card.id} >
@@ -23,7 +24,9 @@ function Card( ) {
             <h3>{card.title}</h3>
         </Link>
      ))}
-           </div>)}
+           </div>
+           </div>
+       )}
   
 
 

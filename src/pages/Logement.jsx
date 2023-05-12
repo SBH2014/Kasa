@@ -1,6 +1,6 @@
 import React from 'react';
 import {useState,useEffect } from 'react'
-import { useSearchParams } from 'react-router-dom'
+import { useSearchParams ,Navigate } from 'react-router-dom'
 import axios from 'axios';
 import greyStar from '../assets/grey-star.png'
 import redStar from "../assets/red-star.png"
@@ -20,17 +20,21 @@ function Logement() {
     const [idLogement] = useState(searchParams.get('_id'));
     const [currentIndex, setCurrentUser] = useState(null);
     const arrayStars  = [1, 2, 3, 4, 5]
+    const [loading, setLoading]= useState (true)
 
     useEffect(()=>{
         function fetchDataByid () {axios.get('../data.json').then(function(res){
             setCurrentUser(res.data.find( data => data.id === idLogement ))
-
+         setLoading(false)
         })}
       fetchDataByid()  
       
     },[idLogement])
+    if (loading){
+        return (<div> Loading ...</div>)
+    }
     if(!currentIndex){
-        return ( (<NotFound />)
+        return ( (<Navigate replace to="/404" />)
         )
     }
     const equipements = currentIndex.equipments.map((element, index) => (
