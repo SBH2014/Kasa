@@ -4,11 +4,9 @@ import { useSearchParams ,Navigate } from 'react-router-dom'
 import axios from 'axios';
 import greyStar from '../assets/grey-star.png'
 import redStar from "../assets/red-star.png"
-import Carrousel from "../components/Carrousel"
+import Carousel from "../components/Carousel"
 import Collapse from '../components/Collapse';
-import NotFound from "../pages/NotFound";
-import "../public/css/style.css";
-import "../public/css/logement.css";
+import "../styles/pages/_logement.scss";
 
 
 
@@ -31,7 +29,7 @@ function Logement() {
       
     },[idLogement])
     if (loading){
-        return (<div> Loading ...</div>)
+        return <div className='loader'></div>
     }
     if(!currentIndex){
         return ( (<Navigate replace to="/404" />)
@@ -43,7 +41,7 @@ function Logement() {
 
     return ( 
         <div className='content__rules'>
-        <Carrousel slides={currentIndex.pictures}/>
+        <Carousel slides={currentIndex.pictures}/>
         
         <div className='content' >
             

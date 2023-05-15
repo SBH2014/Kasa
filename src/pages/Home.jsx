@@ -1,8 +1,7 @@
 
-import "../public/css/style.css";
-import "../public/css/home.css"
 import Banner from '../components/Banner';
 import Card from '../components/Card';
+import "../styles/pages/_home.scss";
 
 function Home() {
  

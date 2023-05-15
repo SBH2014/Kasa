@@ -1,7 +1,7 @@
 import error404 from "../assets/404.png";
 import { Link } from "react-router-dom";
-import "../public/css/style.css";
-import "../public/css/notFound.css"
+import "../styles/pages/_notFound.scss";
+
 
 function NotFound (){
     return ( 

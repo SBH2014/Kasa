@@ -1,5 +1,3 @@
-import '../public/css/style.css'
-import "../public/css/home.css"
 function Banner ({children}){
 return<>
 <div>

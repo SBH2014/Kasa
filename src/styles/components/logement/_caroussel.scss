@@ -56,20 +56,21 @@
         position: absolute;
         content: "";
         inset: 0;
-        top: 75%;
+        top: 500px;
      font-weight: 500;
       font-size: 18px;
        text-align: center;
        color: white;
     }
     @media (max-width:$mobile_mini){
+        height: 255px;
         &__vectorRight{
             padding-right: 10px;
-            top: 280px;
+            top: 230px;
         }
         &__vetorLeft{
             left: 10px;
-            top: 280px;
+            top: 230px;
         }
         &__counter-pic{
             display: none;
@@ -138,23 +139,19 @@
             align-items: center;
             justify-content: center;
             height: 25px;
-            width: 115px;
+            width: 145px;
             font-size: 14px;
             background-color: $color-primary;
             color: white;
             border-radius: 10px;
-            padding-inline: 14px;
             white-space: nowrap;
          
             @media (max-width:$tablette){
-                width:  100px;
-                padding-inline: 20px;
-       
+          
              }
              @media (max-width:$mobile_mini){
-                width: 84px;
+                width: 100px;
                 font-size: 10px;
-                padding-inline: 20px;
              }
         }
        

@@ -4,7 +4,7 @@ function Footer(){
 <div>
     <img src={logo_footer} alt="Logo_footer" />
 </div>
-<p>© 2020 Kasa. All rights reserved</p>
+<p>© 2023 Kasa. All rights reserved</p>
     </footer>
 }
 export default Footer 

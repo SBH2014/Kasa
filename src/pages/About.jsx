@@ -1,10 +1,9 @@
 import React from 'react';
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
-import "../public/css/style.css";
-import "../public/css/apropos.css"
+import "../styles/pages/_aPropos.scss"
 
-function Apropos() {
+function About() {
     const data = [
         {
             title: "Fiabilité",
@@ -38,4 +37,4 @@ return (
 </div>
     </div>;
 }
-export default Apropos
+export default About

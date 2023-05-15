@@ -13,7 +13,7 @@ function Card( ) {
         })
     },[])
     if(!LogementData.length){
-        return <div>Loading ...</div>
+        return <div className='loader'></div>
     }
      return (
    <div className='div_flex'>

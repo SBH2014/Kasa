@@ -6,13 +6,17 @@
          justify-content: center;
          height: 100%;
          font-family: 'Montserrat';
-         font-weight: normal;
+         font-weight: bold;
+   
+
      
      }
      &-pic{
-        background: url("/src/assets/backgroundHome.png");
+
+        background-image: url("../../../assets/backgroundHome.png");
         background-position : center;
         background-size: cover;
+        filter: brightness(0.5);
  
       
      }
