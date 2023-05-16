@@ -1,0 +1,132 @@
+/*media queries*/
+.banner {
+  margin-top: 30px;
+  height: 223px;
+  border-radius: 25px;
+  margin-bottom: 30px;
+}
+
+.banner__home h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: "Montserrat";
+  font-weight: normal;
+}
+.banner__home-pic {
+  background-image: url("../../../assets/backgroundHome.png");
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 505px) {
+  .banner__home h1 {
+    padding-left: 10px;
+    width: 86%;
+  }
+}
+
+.div_flex {
+  width: 100%;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+}
+@media (max-width: 505px) {
+  .div_flex {
+    background-color: white;
+  }
+}
+
+.logements {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 4.333%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 92%;
+}
+.logements a {
+  text-decoration: none;
+  height: 250px;
+}
+.logements__fiche {
+  background-image: linear-gradient(180deg, #FF6060, #FF6060, #FF6060, #a74545);
+  border-radius: 10px;
+  width: 30.4444%;
+}
+.logements__fiche img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: brightness(0.8);
+}
+.logements__fiche h3 {
+  position: absolute;
+  margin-top: -58px;
+  margin-left: 5px;
+  color: white;
+  font-size: 18px;
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 500;
+}
+@media (max-width: 1020px) {
+  .logements {
+    column-gap: 4.3333%;
+    padding-top: 33px;
+    padding-bottom: 33px;
+  }
+  .logements h3 {
+    margin-top: -70px;
+  }
+}
+@media (max-width: 912px) {
+  .logements {
+    column-gap: 2%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .logements a {
+    height: 180px;
+  }
+  .logements__fiche {
+    width: 32%;
+  }
+  .logements__fiche h3 {
+    font-size: 16px;
+    margin-top: -65px;
+  }
+}
+@media (max-width: 650px) {
+  .logements {
+    column-gap: 6%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .logements__fiche {
+    width: 47%;
+  }
+  .logements__fiche h3 {
+    font-size: 16px;
+    width: 40%;
+  }
+}
+@media (max-width: 505px) {
+  .logements__fiche {
+    width: 100%;
+  }
+  .logements__fiche h3 {
+    width: 60%;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

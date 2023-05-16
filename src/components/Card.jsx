@@ -20,7 +20,7 @@ function Card( ) {
          <div className='logements'>
         {LogementData.map((card)=>(
         <Link to={{ pathname: "/Logement", search: "?_id="+ card.id }} className='logements__fiche' key={card.id} >
-            <img src={card.cover} alt="card" />
+            <img src={card.cover} alt={card.title}/>
             <h3>{card.title}</h3>
         </Link>
      ))}

@@ -13,15 +13,14 @@
      }
      &-pic{
 
-        background-image: url("../../../assets/backgroundHome.png");
+      background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../../assets/backgroundHome.png");
         background-position : center;
         background-size: cover;
-        filter: brightness(0.5);
  
       
      }
         
-     @media (max-width:505px) {
+     @media (max-width:$mobile_mini) {
        h1{
         padding-left: 10px;
         width: 86%

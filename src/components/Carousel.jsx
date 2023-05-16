@@ -2,7 +2,7 @@
 import { useState  } from 'react';
 import vectorDroite from "../assets/vectorDroite.png";
 import vectorGauche from "../assets/cevtorGauche.png"
-function Carousel ({slides}){
+function Carousel ({slides,title}){
 
   const [index,setIndex] = useState(0)
   const totalPictures = slides.length-1  // nombre max d'images 
@@ -12,17 +12,17 @@ function Carousel ({slides}){
   return(
 <div >
          {/* si une seule  image, alors ce code sera exécuté */}
-    <div className='carrousel'>
-        <img  src={slides[index]} alt="" />
+    <div className='carousel'>
+        <img  src={slides[index]} alt={"photo "+title} key={"card-" + index} />
     </div>
      {/* si plus d'une image, alors ce code sera exécuté */}
      {totalPictures > 0 && ( 
                 <div> 
-                    <button className="carrousel__button" onClick={() => setIndex(index - 1)}> 
-                        <img src={vectorGauche} className='carrousel__vetorLeft' alt={'flèche gauche pour changer la photo'+index} />
+                    <button className="carousel__button" onClick={() => setIndex(index - 1)}> 
+                        <img src={vectorGauche} className='carousel__vetorLeft' alt={'flèche gauche pour changer la photo'+index} />
                     </button>
-                    <button className="carrousel__button" onClick={() => setIndex(index + 1)}> 
-                        <img src={vectorDroite} className='carrousel__vectorRight' alt={'flèche droite pour changer la photo'+index} />
+                    <button className="carousel__button" onClick={() => setIndex(index + 1)}> 
+                        <img src={vectorDroite} className='carousel__vectorRight' alt={'flèche droite pour changer la photo'+index} />
                     </button>
                 </div>
             )}
@@ -30,7 +30,7 @@ function Carousel ({slides}){
             {totalPictures > 0 && (
 
                 <div> 
-                    <p className='carrousel__counter-pic'>
+                    <p className='carousel__counter-pic'>
                         {index+1}/{totalPictures+1}
                     </p>
                 </div>

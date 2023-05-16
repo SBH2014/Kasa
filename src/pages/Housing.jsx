@@ -6,7 +6,7 @@ import greyStar from '../assets/grey-star.png'
 import redStar from "../assets/red-star.png"
 import Carousel from "../components/Carousel"
 import Collapse from '../components/Collapse';
-import "../styles/pages/_logement.scss";
+import "../styles/pages/_housing.scss";
 
 
 
@@ -36,12 +36,12 @@ function Logement() {
         )
     }
     const equipements = currentIndex.equipments.map((element, index) => (
-        <li  className='collapse__logement-li' key={"equipement-"+index}>{element}</li>
+        <li  className='collapse__housing-li' key={"equipement-"+index}>{element}</li>
       ))
 
     return ( 
         <div className='content__rules'>
-        <Carousel slides={currentIndex.pictures}/>
+        <Carousel slides ={currentIndex.pictures} title={ currentIndex.title}/>
         
         <div className='content' >
             

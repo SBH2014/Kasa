@@ -1,7 +1,7 @@
 import React from 'react';
 import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
-import "../styles/pages/_aPropos.scss"
+import "../styles/pages/_about.scss"
 
 function About() {
     const data = [

@@ -20,28 +20,35 @@
    align-items: center;
    justify-content: flex-start;
    width: 92%;
+
   
 
     a{
         text-decoration: none;
         height:250px ;
+        
+    
     }
     &__fiche{
         background-image: linear-gradient(180deg, $color-primary, #FF6060, #FF6060, #a74545);;
         border-radius: 10px;
-     
          width: 30.4444%;
-   
-
-
+         box-shadow: 0 0 5px rgba(0,0,0,.18);
+       
         img{
             width: 100%;
             border-radius: 10px 10px 0px 0px;
             height: 100%;
             object-fit: cover;
             border-radius: 10px;
-            filter: brightness(0.8);
-
+            filter: brightness(0.7);
+  
+            transition: transform 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.03);
+            }
+   
+         
         }
         h3{
             position: absolute;
