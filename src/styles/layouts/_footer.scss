@@ -1,4 +1,4 @@
-.footer{
+.footer {
     background-color: black;
     margin-top: 30px;
     width: 100%;
@@ -7,16 +7,19 @@
     justify-content: flex-end;
     align-items: center;
     height: 209px;
-   background-color: black;
-    color: white;;
+    background-color: black;
+    color: white;
+    ;
     font-size: 24px;
+
     @media (max-width:505px) {
         justify-content: center;
-        p{
-            font-size: 12px; 
+
+        p {
+            font-size: 12px;
 
         }
- 
-      }
-  
+
+    }
+
 }

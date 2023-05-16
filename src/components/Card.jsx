@@ -4,30 +4,31 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-function Card( ) {
-    const [LogementData, setLogementData] = useState([])
-    useEffect(()=>{
-        
-        axios.get('../data.json').then(function(res){
-           setLogementData(res.data)
+function Card() {
+    const [housingData, sethousingData] = useState([])
+    useEffect(() => {
+
+        axios.get('../data.json').then(function (res) {
+            sethousingData(res.data)
         })
-    },[])
-    if(!LogementData.length){
+    }, [])
+    if (!housingData.length) {
         return <div className='loader'></div>
     }
-     return (
-   <div className='div_flex'>
-         <div className='logements'>
-        {LogementData.map((card)=>(
-        <Link to={{ pathname: "/Logement", search: "?_id="+ card.id }} className='logements__fiche' key={card.id} >
-            <img src={card.cover} alt={card.title}/>
-            <h3>{card.title}</h3>
-        </Link>
-     ))}
-           </div>
-           </div>
-       )}
-  
+    return (
+        <div className='div_flex'>
+            <div className='housing'>
+                {housingData.map((card) => (
+                    <Link to={{ pathname: "/Housing", search: "?_id=" + card.id }} className='housing__fiche' key={card.id} >
+                        <img src={card.cover} alt={card.title} />
+                        <h3>{card.title}</h3>
+                    </Link>
+                ))}
+            </div>
+        </div>
+    )
+}
+
 
 
 Card.propTypes = {

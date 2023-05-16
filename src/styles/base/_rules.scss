@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
 
-body{
-    
+body {
+
         font-family: 'Montserrat', sans-serif;
         max-width: 1440px;
         margin: auto;
-    
+
 }
-.content__rules{
+
+.content__rules {
         padding: 20px;
-        @media (max-width:505px ) {
-            padding: 5px;
-              }
+
+        @media (max-width:505px) {
+                padding: 5px;
+        }
 }

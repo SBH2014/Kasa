@@ -1,11 +1,11 @@
-.carousel{
+.carousel {
     position: relative;
     height: 415px;
     width: 100%;
     margin-top: 30px;
 
 
-    img{
+    img {
         object-fit: cover;
         position: absolute;
         content: "";
@@ -14,117 +14,130 @@
         inset: 0;
         border-radius: 25px;
     }
-    p{
+
+    p {
         position: relative;
         font-size: 18px;
         font-weight: 500;
-        color:white;
+        color: white;
         margin-top: 340px;
         text-align: center;
         text-shadow: 0px 0px 5px black;
     }
-   &__button{
+
+    &__button {
         border: none;
         background-color: transparent;
         display: hidden;
-        color:white;
+        color: white;
     }
 
-    &__vectorRight{
-       
-     
-            position: absolute;
-            content: "";
-            inset: 0;
-            top: 310px;
-            cursor: pointer;
-            left: revert;
-            padding-right: 30px;
-      
+    &__vectorRight {
+
+
+        position: absolute;
+        content: "";
+        inset: 0;
+        top: 310px;
+        cursor: pointer;
+        left: revert;
+        padding-right: 30px;
+
     }
-    &__vetorLeft{
-     
-            position: absolute;
-            content: "";
-            color: white;
-            inset: 0;
-            top:  310px;
-            cursor: pointer;
-            left: 30px;
+
+    &__vetorLeft {
+
+        position: absolute;
+        content: "";
+        color: white;
+        inset: 0;
+        top: 310px;
+        cursor: pointer;
+        left: 30px;
     }
-    &__counter-pic{
+
+    &__counter-pic {
         position: absolute;
         content: "";
         inset: 0;
         top: 500px;
-     font-weight: 500;
-      font-size: 18px;
-       text-align: center;
-       color: white;
+        font-weight: 500;
+        font-size: 18px;
+        text-align: center;
+        color: white;
     }
-    @media (max-width:$mobile_mini){
+
+    @media (max-width:$mobile_mini) {
         height: 255px;
-        &__vectorRight{
+
+        &__vectorRight {
             padding-right: 10px;
             top: 230px;
             width: 12px;
             height: 20px;
             top: 250px;
         }
-        &__vetorLeft{
+
+        &__vetorLeft {
             left: 10px;
             top: 250px;
             width: 12px;
             height: 20px;
         }
-        &__counter-pic{
+
+        &__counter-pic {
             display: none;
         }
     }
 }
-.content{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  
 
-    h1{
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+
+    h1 {
         color: $color-primary;
         font-size: 36px;
         margin-bottom: 0;
     }
-    @media (max-width:$mobile_mini){
-     h1{
-        font-size: 18px;
 
-     } 
+    @media (max-width:$mobile_mini) {
+        h1 {
+            font-size: 18px;
 
-     }
-    
-  &__title{
-      display: flex;
-      flex-direction: column;
-      width: 90%;
-      padding-left: 20px; 
-      &-p{
-        color: $color-primary;
-        font-size: 18px;
-        margin-top: 0;
-        margin-bottom: 10px;
-   
-      }
-      @media (max-width:$mobile_mini){
-        width: 100%;
-        padding-left: 0;
-        &-p{
-            font-size: 14px;
-            line-height: 142.6%;
         }
 
-     }
-     }  
-   
-    &__tags{
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding-left: 20px;
+
+        &-p {
+            color: $color-primary;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 10px;
+
+        }
+
+        @media (max-width:$mobile_mini) {
+            width: 100%;
+            padding-left: 0;
+
+            &-p {
+                font-size: 14px;
+                line-height: 142.6%;
+            }
+
+        }
+    }
+
+    &__tags {
 
         display: flex;
         flex-direction: row;
@@ -132,14 +145,14 @@
         flex-wrap: wrap;
         white-space: nowrap;
 
-        @media (max-width:$tablette){
-           column-gap: 5px;
-     
-        }
-    
-        
+        @media (max-width:$tablette) {
+            column-gap: 5px;
 
-        &-list{
+        }
+
+
+
+        &-list {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -150,81 +163,88 @@
             color: white;
             border-radius: 10px;
             white-space: nowrap;
-         
-            @media (max-width:$tablette){
-          
-             }
-             @media (max-width:$mobile_mini){
+
+            @media (max-width:$tablette) {}
+
+            @media (max-width:$mobile_mini) {
                 width: 100px;
                 font-size: 10px;
-             }
+            }
         }
-       
 
-     }
-     &__blocHost{
+
+    }
+
+    &__blocHost {
         display: flex;
         flex-direction: column;
-        @media (max-width:$desktop){
+
+        @media (max-width:$desktop) {
             flex-direction: row-reverse;
             justify-content: space-between;
             align-items: center;
         }
-        @media (max-width:$mobile_mini){
+
+        @media (max-width:$mobile_mini) {
             p {
-            font-size: 12px;
-            text-align: right;
-            width: 60px;
+                font-size: 12px;
+                text-align: right;
+                width: 60px;
             }
         }
-    
-        &-host{
+
+        &-host {
             display: flex;
             flex-direction: row;
             gap: 10px;
             color: $color-primary;
             margin-top: 20px;
-            img{
+
+            img {
                 width: 64px;
                 height: 64px;
                 border-radius: 50%;
-                @media (max-width:$mobile_mini){
+
+                @media (max-width:$mobile_mini) {
                     width: 32px;
                     height: 32px;
 
                 }
             }
-            @media (max-width:$mobile_mini){
+
+            @media (max-width:$mobile_mini) {
                 align-items: center;
                 padding-bottom: 20px;
-            
+
                 img {
                     width: 32px;
                     height: 32px;
                 }
-              
-                
+
+
             }
-    
-         }
-         &-stars{
+
+        }
+
+        &-stars {
             display: flex;
             font-size: 30px;
             gap: 10px;
-            img{
-                @media (max-width:$mobile_mini){
+
+            img {
+                @media (max-width:$mobile_mini) {
                     width: 18px;
                     height: 18px;
                 }
             }
-           
-         }
-     }
-   
 
-    @media (max-width:$desktop){
-             flex-direction: column;
+        }
+    }
+
+
+    @media (max-width:$desktop) {
+        flex-direction: column;
 
     }
-     
+
 }
