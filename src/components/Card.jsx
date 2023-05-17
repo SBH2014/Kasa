@@ -18,8 +18,8 @@ function Card() {
     return (
         <div className='div_flex'>
             <div className='housing'>
-                {housingData.map((card) => (
-                    <Link to={{ pathname: "/Housing", search: "?_id=" + card.id }} className='housing__fiche' key={card.id} >
+                {housingData.map((card, index) => (
+                    <Link to={{ pathname: "/Housing", search: "?_id=" + card.id }} className='housing__fiche' key={index} >
                         <img src={card.cover} alt={card.title} />
                         <h3>{card.title}</h3>
                     </Link>

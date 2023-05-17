@@ -64,12 +64,10 @@ function Housing() {
                         </div>
                         <div className='content__blocHost-stars'>
                             {
-                                arrayStars.map((index, element) => {
+                                arrayStars.map((element, index) => {
                                     const hostStars = parseInt(housing.rating)
-
                                     return (
-
-                                        <img key={hostStars.rating + index} src={element >= hostStars ? greyStar : redStar} alt="" />
+                                        <img key={index} src={element >= hostStars ? greyStar : redStar} alt="" />
                                     )
                                 })
                             }

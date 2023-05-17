@@ -26,9 +26,8 @@ function About() {
                 <Banner>
                     <div className='banner banner__aPropos-pic'></div>
                 </Banner>
-                {aboutData.map((item, i, index) => {
-                    return (
-                        <Collapse key={item.title + index} title={item.title}
+                {aboutData.map((item, i, index) => {                    return (
+                        <Collapse key={item.title + i} title={item.title}
                             content={item.content}
                             i={i} />
                     )
