@@ -2,6 +2,7 @@ import arrowUp from "../assets/arrow2.png";
 import arrowDown from '../assets/arrow.png';
 import { useState } from "react";
 function Collapse({ title, content, i }) {
+    //collapse par defaut comme fermé 
     const [selected, setSelected] = useState(null)
     const viewContent = (i) => {
         if (selected === i) {

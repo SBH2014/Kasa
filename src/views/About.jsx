@@ -1,8 +1,8 @@
 import React from 'react';
-import Banner from '../Layout/Banner';
-import Header from '../Layout/Header';
+import Banner from '../components/Banner';
+import Header from '../components/Header';
 import Collapse from '../components/Collapse';
-import Footer from '../Layout/Footer'
+import Footer from '../components/Footer'
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import "../styles/pages/_about.scss"

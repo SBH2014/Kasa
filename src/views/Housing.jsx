@@ -2,12 +2,12 @@ import React from 'react';
 import { useState, useEffect } from 'react'
 import { useSearchParams, Navigate } from 'react-router-dom'
 import axios from 'axios';
-import Header from '../Layout/Header';
+import Header from '../components/Header';
 import greyStar from '../assets/grey-star.png'
 import redStar from "../assets/red-star.png"
 import Carousel from "../components/Carousel"
 import Collapse from '../components/Collapse';
-import Footer from '../Layout/Footer';
+import Footer from '../components/Footer';
 import "../styles/pages/_housing.scss";
 
 
@@ -44,7 +44,9 @@ function Housing() {
         <>
             <Header />
             <div className='content__rules'>
+                {/*Caroussel d'images*/}
                 <Carousel slides={housing.pictures} title={housing.title} />
+                {/*Le titre l'emplacement et les tags */}
                 <div className='content' >
                     <div className='content__title' >
                         <h1>{housing.title}</h1>
@@ -62,6 +64,7 @@ function Housing() {
                             <p>{housing.host.name}</p>
                             <img src={housing.host.picture} key={housing.host.name} alt={housing.title} />
                         </div>
+                        {/*Les etoiles */}
                         <div className='content__blocHost-stars'>
                             {
                                 arrayStars.map((element, index) => {
@@ -76,9 +79,10 @@ function Housing() {
 
 
                 </div>
+                {/*Collapse : description et équipement */}
                 <div className='collapse__housing '>
                     <Collapse title="Description" content={housing.description} />
-                    <Collapse title="Equipements" content={equipements} />
+                    <Collapse title="Équipements" content={equipements} />
                 </div>
             </div>
             <Footer />

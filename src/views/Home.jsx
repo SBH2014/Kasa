@@ -1,8 +1,8 @@
 
-import Header from '../Layout/Header';
-import Banner from '../Layout/Banner';
+import Header from '../components/Header';
+import Banner from '../components/Banner';
 import Card from '../components/Card';
-import Footer from '../Layout/Footer';
+import Footer from '../components/Footer';
 import "../styles/pages/_home.scss";
 
 function Home() {

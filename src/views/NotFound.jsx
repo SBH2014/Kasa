@@ -1,7 +1,7 @@
 import error404 from "../assets/404.png";
-import Header from "../Layout/Header";
+import Header from "../components/Header";
 import { Link } from "react-router-dom";
-import Footer from "../Layout/Footer";
+import Footer from "../components/Footer";
 import "../styles/pages/_not_found.scss";
 
 
