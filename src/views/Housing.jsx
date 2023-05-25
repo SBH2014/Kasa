@@ -14,7 +14,7 @@ import "../styles/pages/_housing.scss";
 function Housing() {
 
     const [searchParams] = useSearchParams();
-    const [idhousing] = useState(searchParams.get('_id'));
+    const idHousing = (searchParams.get('_id'));
     const [housing, setHousing] = useState(null);
     const arrayStars = [1, 2, 3, 4, 5]
     const [loading, setLoading] = useState(true)
@@ -22,13 +22,13 @@ function Housing() {
     useEffect(() => {
         function fetchDataByid() {
             axios.get('../data.json').then(function (res) {
-                setHousing(res.data.find(data => data.id === idhousing))
+                setHousing(res.data.find(data => data.id === idHousing))
                 setLoading(false)
             })
         }
         fetchDataByid()
 
-    }, [idhousing])
+    }, [idHousing])
     if (loading) {
         return <div className='loader'></div>
     }
