@@ -21,9 +21,7 @@ function About() {
     <>
       <div className="content__rules">
         <Header />
-        <Banner>
-          <div className="banner banner__aPropos-pic"></div>
-        </Banner>
+        <Banner bannerClass={"banner__aPropos-pic"} />
         {aboutData.map((item, i) => {
           return (
             <Collapse

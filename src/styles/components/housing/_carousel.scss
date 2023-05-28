@@ -1,3 +1,7 @@
+.position {
+    position: relative;
+}
+
 .carousel {
     position: relative;
     height: 415px;
@@ -8,10 +12,9 @@
     img {
         object-fit: cover;
         position: absolute;
-        content: "";
+
         height: 100%;
         width: 100%;
-        inset: 0;
         border-radius: 25px;
     }
 
@@ -28,38 +31,25 @@
     &__button {
         border: none;
         background-color: transparent;
-        color: white;
+
     }
 
     &__vectorRight {
-
-
         position: absolute;
-        content: "";
-        inset: 0;
-        top: 310px;
-        cursor: pointer;
-        left: revert;
-        padding-right: 30px;
-
+        top: 38%;
+        right: 5px;
     }
 
     &__vetorLeft {
-
         position: absolute;
-        content: "";
-        color: white;
-        inset: 0;
-        top: 310px;
-        cursor: pointer;
-        left: 30px;
+        top: 38%;
     }
 
     &__counter-pic {
+
+        top: 85%;
+        right: 50%;
         position: absolute;
-        content: "";
-        inset: 0;
-        top: 500px;
         font-weight: 500;
         font-size: 18px;
         text-align: center;
@@ -70,16 +60,13 @@
         height: 255px;
 
         &__vectorRight {
-            padding-right: 10px;
-            top: 230px;
+
             width: 12px;
             height: 20px;
-            top: 250px;
         }
 
         &__vetorLeft {
-            left: 10px;
-            top: 250px;
+
             width: 12px;
             height: 20px;
         }

@@ -1,46 +1,51 @@
-.collapse{
+.collapse {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-   h3{
-    font-weight: normal;
+
+    h3 {
+        font-weight: normal;
     }
-    &__accordion{
+
+    &__accordion {
         width: 80%;
     }
 
-    &__item{
+    &__item {
         margin-bottom: 5px;
         padding: 10px 10px;
-        @media (max-width:$mobile_mini){
-        padding: 0;
-            }
-     
-     
-        &-title{
+
+        @media (max-width:$mobile_mini) {
+            padding: 0;
+        }
+
+
+        &-title {
             display: flex;
-         align-items: center;
-         justify-content: space-between;
-           background-color: $color-primary;
-         font-weight: 500;
-           color: white;
-           font-style: normal;
-           border-radius: 5px;
-           height: 40px;
-           padding: 0 5px 0 5px;
-           cursor: pointer;
-           margin: 0;
-           font-size: 24px;
+            align-items: center;
+            justify-content: space-between;
+            background-color: $color-primary;
+            font-weight: 500;
+            color: white;
+            font-style: normal;
+            border-radius: 5px;
+            height: 40px;
+            padding: 0 5px 0 5px;
+            cursor: pointer;
+            margin: 0;
+            font-size: 24px;
 
         }
+
         p {
             padding: 20px 10px 20px 10px;
             margin: 0;
             font-size: 24px;
         }
-        &-content{
+
+        &-content {
             background-color: $color-secondary;
             color: $color-primary;
             font-weight: 400;
@@ -48,8 +53,9 @@
             transition: all 0.5s cubic-bezier(0, 1, 0, 1);
             max-height: 0;
         }
-        &-contentShow{
-            max-height:max-content;
+
+        &-contentShow {
+            max-height: max-content;
             background-color: $color-secondary;
             color: $color-primary;
             font-weight: 400;
@@ -57,24 +63,28 @@
         }
 
     }
+
     @media (max-width:$tablette) {
-        &__accordion{
+        &__accordion {
             width: 90%;
         }
-     
-      }
-      @media (max-width:505px ) {
-        &__accordion{
+
+    }
+
+    @media (max-width:505px) {
+        &__accordion {
             width: 100%;
         }
-        &__item{
-            &-title{
+
+        &__item {
+            &-title {
                 font-size: 13px;
-            } 
+            }
+
             p {
-         
+
                 font-size: 12px;
             }
         }
-      }
+    }
 }

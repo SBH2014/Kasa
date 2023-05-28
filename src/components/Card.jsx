@@ -30,7 +30,7 @@ function Card() {
     </div>
   );
 }
-//Indique le type des props 
+//Indique le type des props
 Card.propTypes = {
   title: PropTypes.string,
   cover: PropTypes.string,
